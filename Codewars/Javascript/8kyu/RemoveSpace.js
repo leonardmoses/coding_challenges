@@ -7,23 +7,7 @@ title.innerHTML= ChallengeName;
 
 
 function noSpace(x){
-
-    const array = x.split('')
-    console.log(array)
-    // array.forEach(element => {
-    //     if (element === ' ') {
-    //         element = ''
-    //     }
-    // });
-
-    for (let i=0; i<array.length; i++) {
-        if (array[i] === ' ' ) {
-            array[i] = ''
-        }
-    }
-
-    const array2 = array.join()
-    console.log(array2)
+    console.log(x.replaceAll(" ", ""))
 }
 
 
