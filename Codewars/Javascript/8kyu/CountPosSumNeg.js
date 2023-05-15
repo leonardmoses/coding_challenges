@@ -14,9 +14,8 @@ If the input is an empty array or is null, return an empty array.
 function countPositivesSumNegatives(input) {
     const arrayPos = []
     const arrayNeg = []
-    let countPos = 0
     let sumNeg = 0
-    let answer = []
+
     input.forEach(element => {
         if(element >= 0) {
             arrayPos.push(element)
@@ -24,19 +23,10 @@ function countPositivesSumNegatives(input) {
             arrayNeg.push(element)
         }
     });
-    console.log(arrayPos)
-    console.log(arrayNeg)
 
-    arrayPos.forEach(element => {
-        countPos = arrayPos.length
-    });
-    
-    arrayNeg.forEach(element => {
-        sumNeg += element
-    })
-    
-    answer.push(countPos)
-    answer.push(sumNeg)
+    arrayNeg.map(x => sumNeg += x)
+    const answer = [arrayPos.length, sumNeg]
+
     console.log(answer)
   }
 
