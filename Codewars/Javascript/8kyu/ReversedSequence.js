@@ -12,16 +12,15 @@ Example : n=5 --> [5,4,3,2,1]
 
 
 const reverseSeq = n => {
-    console.log(n)
-    const array = [n]
-    for (let i = 0; i<n; i++) {
-        array.push(n -= 1)
+    // console.log(n)
+    const array1 = []
+    for (let i = 1; i<n+1; i++) {
+        array1.push(i)
     }
-    array.push(1)
-
-    console.log(array)
+    array1.reverse()
+    console.log(array1)
   };
 
 
-reverseSeq(5)
-// , [5, 4, 3, 2, 1]);
+reverseSeq(10)
+
