@@ -16,7 +16,7 @@ Note: for this kata y isn't considered a vowel.
 */
 
 function disemvowel(str) {
-    const vowels = ['a','e','i','o','u']
+    const vowels = ['a','e','i','o','u','A','E','I','O','U']
     const strArray = str.split('')
     const strArray2 = []
 
