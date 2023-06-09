@@ -11,14 +11,7 @@ P.S. Each array includes only integer numbers. Output is a number too.
 
 function arrayPlusArray(arr1, arr2) {
     let answer = 0
-    arr1.forEach(x => {
-      answer += x
-    })
-    
-    arr2.forEach(x => {
-      answer += x
-    })
-    
+    const arr3 = arr1.concat(arr2).forEach(x => {answer += x})
     console.log(answer)
   }
 
