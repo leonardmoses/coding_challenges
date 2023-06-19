@@ -18,25 +18,25 @@ If you like this Kata, maybe try this one next: https://www.codewars.com/kata/re
 
 Can you write a solution that will return null for both [] and [ x ] though? (This is an empty array and one with a single number and is not tested for, but you can write your own example test. )
 
-
-Swift, Ruby and Crystal: nil
-Haskell: Nothing
-Python, Rust, Scala: None
-Julia: nothing
-Nim: none(int) (See options)
 */
 
 function firstNonConsecutive (arr) {
-    console.log(arr)
-    for (let i = arr[0]-3; i<=arr.length+3; i++) {
-        // console.log(i)
-        console.log(arr[i])
+    // console.log(arr)
+    const answer = []
+    for (let i = 0; i<=arr.length; i++) {
+        // console.log(arr[i]+1)
+        // console.log(arr[i+1])
+        if (arr[i]+1 !== arr[i+1]) {
+            answer.push(arr[i+1])
+        }
+        
     }
+    console.log(answer[0] == undefined ? null : answer[0])
 }
 
  
-// firstNonConsecutive([1,2,3,4,6,7,8])
+firstNonConsecutive([1,2,3,4,6,7,8])
   
-// firstNonConsecutive([1,2,3,4])
+firstNonConsecutive([1,2,3,4])
 
 firstNonConsecutive([3,4,5,6,7,8,9,11,12])
