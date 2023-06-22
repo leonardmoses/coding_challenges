@@ -19,9 +19,20 @@ isIsogram "aba" = false
 function isIsogram(str){
     console.log(str)
     const array1 = str.toLowerCase().split('')
+    console.log(array1)
 
-    array1.filter((currentValue, currentIndex ) => 
-    array1.indexOf(currentValue) !== currentIndex)
+    for (let i=0; i<array1.length; i++) {
+        console.log('-------------->'+array1[i])
+        for (let j=0; j<array1.length; j++) {
+            // console.log(array1[j])
+            if (array1[j]===array1[i]) {
+                console.log(true)
+            } else {
+                console.log(false)
+            }
+        }
+    }
+
 
   }
 
