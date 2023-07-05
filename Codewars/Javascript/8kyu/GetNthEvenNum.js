@@ -16,14 +16,18 @@ The input will not be 0.
 */
 
 
-function nthEven(n){
-    const array1 = []
-    for(let i = 0; i<=(n*2)-1; i=i+2) {
-        array1.push(i)
-    }
-    console.log('break--------------')
-    console.log(array1)
-    console.log(array1[n-1])
+// function nthEven(n){
+//     const array1 = []
+//     for(let i = 0; i<=(n*2)-1; i=i+2) {
+//         array1.push(i)
+//     }
+//     console.log('break--------------')
+//     console.log(array1)
+//     console.log(array1[n-1])
+//   }
+
+  function nthEven(n){
+    console.log((n-1)*2)
   }
 
 
@@ -43,7 +47,4 @@ nthEven(100)
 nthEven(1298734)
 // 2597466
 
-// nthEven(100)
-// // , 198, "Wrong Value!");
-// nthEven(1298734)
-// // , 2597466, "Wrong Value!");
+nthEven(169220804)
