@@ -19,19 +19,22 @@ Examples (input -> output)
 */
 
 
+// function mergeArrays(arr1, arr2) {
+//     const arr3 = [arr1,arr2].flat()
+//     const arr4 = []
+//     arr3.sort((a,b) => a-b)
+//     arr3.forEach( e => {
+//         if (!arr4.includes(e)) {
+//             arr4.push(e)
+//         }
+//     })
+//     console.log(arr4)
+//   }
+
 function mergeArrays(arr1, arr2) {
-    const arr3 = [arr1,arr2].flat()
-    const arr4 = []
-    arr3.sort((a,b) => a-b)
-    arr3.forEach( e => {
-        if (!arr4.includes(e)) {
-            arr4.push(e)
-        }
-    })
-    console.log(arr4)
+    console.log(Array.from(new Set(arr1.concat(arr2).sort((a,b) => a-b))) )
+
   }
-
-
 
 mergeArrays([1,2,3,4], [5,6,7,8])
 // , [1,2,3,4,5,6,7,8], "Basic tests");
